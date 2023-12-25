@@ -12,16 +12,19 @@ function returnNeighboringNumbers(summ) {
 returnNeighboringNumbers(5);
 // ------------------------------------------
 function getMathResult(a, b) {
-    let result = ''
     if (typeof b != 'number' || b <= 0) {
-        // return a
         console.log(a)
-    } else {
-        for (let i = 1; i <= b; i++) {
-            result += (` -- ${a * i}`)
+        return a
+    }
+    let result = '';
+    for (let i = 1; i <= b; i++) {
+        if (i === b) {
+            result += `${a * i}`
+        } else {
+            result = result + a * i + '---'
         }
     }
-    // return result
     console.log(result)
+    return result
 }
-getMathResult(3, 4)
+getMathResult(10, 6)
