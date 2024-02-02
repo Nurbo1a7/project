@@ -27,19 +27,21 @@ console.log(parseFloat(test));
 // Эта функция принимает в себя целое число со значением длины ребра куба.
 
 function calculateVolumeAndArea(cube) {
-    if (cube != 'number' && !Number.isInteger(cube) || cube < 0) {
-        console.log('При вычислении произошла ошибка');
-    } else {
-        console.log(`Объем куба: ${Math.pow(cube, 3)}, площадь всей поверхности: ${6*(cube * cube)}`);
-    }
+	if (cube != 'number' && !Number.isInteger(cube) || cube < 0) {
+		console.log('При вычислении произошла ошибка');
+	} else {
+		console.log(`Объем куба: ${Math.pow(cube, 3)}, площадь всей поверхности: ${6*(cube * cube)}`);
+	}
 }
-calculateVolumeAndArea(-15)
-    // ----------------------------------------
+calculateVolumeAndArea(-15);
+// ----------------------------------------
 
 function getCoupeNumber(train) {
-    if (train != 'number' && !Number.isInteger(train) && train <= 36 || train < 0) {
-        console.log('Ошибка. Проверьте правильность введенного номера места')
-    } else if (train === 0 || train > 36) {
-        console.log('Таких мест в вагоне не существует')
-    }
+	if (train != 'number' && !Number.isInteger(train) && train <= 36 || train < 0) {
+		console.log('Ошибка. Проверьте правильность введенного номера места');
+	} else if (train === 0 || train > 36) {
+		console.log('Таких мест в вагоне не существует');
+	}
+	console.log(`Ваш вагон: ${Math.ceil(train / 4)}`);
 }
+getCoupeNumber(33);
