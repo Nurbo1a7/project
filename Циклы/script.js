@@ -53,8 +53,8 @@ const length = 7;
 
 for (let i = 1; i < length; i++) {
 
-    for (let j = 0; j < i; j++) {
-        result += '*';
+    for (let j = 0; j < length; j++) {
+        result += 1;
     }
 
     result += '\n'; // ← перенос строки
