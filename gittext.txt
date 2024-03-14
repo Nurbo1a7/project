@@ -1,3 +1,4 @@
+JavaScript — это объектно-ориентированный (ОО) язык, уходящий корнями в язык Self, несмотря на то, что внешне он выглядит как Java.
 Для создание Git
 - git init
 - git config --global user.name 'Nurbolat'
