@@ -47,25 +47,12 @@ isBudgetEnough(shoppingMallData)
 const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
 
 function sortStudentsByGroups(arr) {
-    // arr.sort()
-    const array_size = 3;
-    const sliced_array = [];
-    for (let i = 0; i < arr.length; i++) {
-        sliced_array.push(arr.slice(i, i + array_size));
+    arr.sort();
+    let arrGroup = [];
+    for (let i = 0; i < 3; i++) {
+        arrGroup.push(arr.splice(0, 3));
     }
-    console.log(sliced_array);
+    arrGroup.push(`Оставшиеся студенты: ${!arr.length ? `-` : arr.join(", ")}`);
+    console.log(arrGroup)
 }
 sortStudentsByGroups(students)
-
-
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-const array_size = 3;
-
-const sliced_array = [];
-
-for (let i = 0; i < array.length; i += array_size) {
-    sliced_array.push(array.slice(i, i + array_size));
-}
-
-console.log(sliced_array);
