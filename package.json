@@ -1,7 +1,6 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.55.0"
-  }
+    "@eslint/js": "^9.2.0",
+    "eslint": "^8.57.0",
+    "globals": "^15.1.0"
+  },
+  "description": ""
 }
